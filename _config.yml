@@ -1,5 +1,7 @@
 theme: minima
+  skin: dark
 
 title: Marvelous Adventures of bioinformatics
 author: Anson Tsui
-description: Bioinformatics misadventures
+description: >
+  Bioinformatics misadventures
