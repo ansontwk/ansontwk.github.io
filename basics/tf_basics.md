@@ -70,3 +70,5 @@ pip uninstall numpy
 
 pip install numpy==1.X.X #X.X is a specified numpy version.
 ```
+
+[back](../)
