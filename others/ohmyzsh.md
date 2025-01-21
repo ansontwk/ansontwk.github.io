@@ -4,7 +4,7 @@ layout: default
 
 # Oh my ZSH
 
-I am personally a avid fan of [Oh my zsh](https://ohmyz.sh/), it makes my life navigating the command line and working with code in general way better. 
+I am personally an avid fan of [Oh my zsh](https://ohmyz.sh/), it makes my life navigating the command line and working with code in general way better. 
 
 As an added bonus, it gives you flair and you can custom your interface to your heart's desire. When you are staring at this for 8+ hours per day, it better be an eye-candy.
 

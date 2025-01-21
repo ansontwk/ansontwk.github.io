@@ -20,5 +20,7 @@ My work is usually on a Linux Ubuntu workstation and I manage my environments us
 
 * [Tensorflow Basics](./basics/tf_basics.md)
 * [Genome Plotting](./basics/plot_genome.md)
+* [Multiple Sequence Alignment](./basics/msa.md)
+* [Multiple Sequence Alignment Plotting](./basics/plot_msa.md)
 
 # Other stuff
