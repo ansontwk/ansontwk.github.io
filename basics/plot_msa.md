@@ -4,7 +4,7 @@ layout: default
 
 # Plotting MSA
 
-pymsaviz is a great local and offline multiple sequence alignment (MSA) viewer and plotter to the [NCBI online MSA viewer](https://www.ncbi.nlm.nih.gov/projects/msaviewer/). No frills, easy to install and use and is fantastic for publication uses.
+Pymsaviz is a great local and offline multiple sequence alignment (MSA) viewer and plotter alternative to the [NCBI online MSA viewer](https://www.ncbi.nlm.nih.gov/projects/msaviewer/). No frills, easy to install and use and is fantastic for creating publication-grade figures.
 
 I will be using the [example](../basics/msa.md) to visulise the alignment.
 
