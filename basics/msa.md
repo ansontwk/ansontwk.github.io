@@ -6,11 +6,11 @@ layout: default
 
 Multiple sequence alignment (MSA) is a integral part of bioinformatics where two or more nucleotide or protein sequence can be aligned together. This MSA can be used to infer phylogenetic trees and the evolutionary relationships between sequences.
 
-This small tutorial will use two bacterial gyrase subunit A (*gyrA*) protein sequences from M tuberculosis ATCC 25618 (Accession: P9WG47) and S. aureus NCTC 8325 (Accession: Q2G2Q0). The alignment algorithim is mafft.
+This small tutorial will use two bacterial gyrase subunit A (*gyrA*) protein sequences from M tuberculosis ATCC 25618 (Accession: P9WG47) and S. aureus NCTC 8325 (Accession: Q2G2Q0) by using the MAFFT aligner.
 
 ## Prerequisite 
 
-* MAFFT (or any other multiple sequence aligner)
+* MAFFT
 
 ## Installation
 

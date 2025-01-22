@@ -23,4 +23,8 @@ My work is usually on a Linux Ubuntu workstation and I manage my environments us
 * [Multiple Sequence Alignment](./basics/msa.md)
 * [Multiple Sequence Alignment Plotting](./basics/plot_msa.md)
 
-# Other stuff
+## Yer a wizard
+
+* [Protein Language Models](./posts/plm.md)
+
+## Other stuff
