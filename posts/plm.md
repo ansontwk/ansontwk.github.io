@@ -7,6 +7,7 @@ layout: default
 This is a gentle introduction and tutorial into Protein language models (PLMs). PLMs are large language models pre-trained on vast amounts of protein sequences, usually in a unsupervised fashion where no labels are given to the sequences. The model is tasked to discover and learn the semantics of the protein sequences, effectively understanding the language of proteins (i.e. amino acids). 
 
 This tutorial will be covering the ESM2 PLM 650 million parameter model developed by Facebook AI Research. This tutorial shows how to extract the embeddings, a feature rich vector that describes the protein. There are lots of other PLMs available such as ProtBert.
+I will be embedding the same Gyrase A (Accession: P9WG47) as an example in previous posts.
 
 ## Prerequisite 
 
@@ -29,7 +30,11 @@ This tutorial will be covering the ESM2 PLM 650 million parameter model develope
     ```sh
     pip install numpy
     ```
-* 
+* transformers
+
+    ```sh
+    pip install transformers
+    ```
 
 ## Usage
 
@@ -93,13 +98,16 @@ This tutorial will be covering the ESM2 PLM 650 million parameter model develope
 7.  Tokenize the sequence, feed it into the ESM2 model and retrieve the last hidden state. This is the embedding layer.
     
     ```python
-    inputs = tokenizer(seqs, return_tensors="tf", padding= True, truncation= True, max_length = 1024)
+    inputs = tokenizer(seqs, return_tensors="tf", padding= True, truncation= True, max_length = 1024) #return tf for tensorflow
     outputs = model(inputs)
     last_hidden_states = outputs.last_hidden_state
     per_residue_embeddings = np.array(last_hidden_states)
     ```
 
     This will yield a np array of size *num_of_sequence* /* *length_of_protein* /* *1280*
+
+    *Note: ESM2 and its other sister models have the same input sequence limit of 1024 amino acids.*
+    *Note2: Failure to comply to this 1024 aa limit **may** [poison your GPU](https://github.com/facebookresearch/esm/discussions/76). You have been warned*
 
 8. Optional: Get the per protein embeddings
     
