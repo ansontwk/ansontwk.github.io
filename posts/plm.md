@@ -104,7 +104,7 @@ I will be embedding the same Gyrase A (Accession: P9WG47) as an example in previ
     per_residue_embeddings = np.array(last_hidden_states)
     ```
 
-    This will yield a np array of size *num_of_sequence* /* *length_of_protein* /* *1280*
+    This will yield a np array of size *num_of_sequence* * *length_of_protein* * *1280*
 
     *Note: ESM2 and its other sister models have the same input sequence limit of 1024 amino acids.*
     *Note2: Failure to comply to this 1024 aa limit **may** [poison your GPU](https://github.com/facebookresearch/esm/discussions/76). You have been warned*
