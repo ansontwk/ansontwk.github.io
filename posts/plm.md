@@ -4,10 +4,11 @@ layout: default
 
 # Protein Language Models 
 
-This is a gentle introduction and tutorial into Protein language models (PLMs). PLMs are large language models pre-trained on vast amounts of protein sequences, usually in a unsupervised fashion where no labels are given to the sequences. The model is tasked to discover and learn the semantics of the protein sequences, effectively understanding the language of proteins (i.e. amino acids). 
+This is a gentle introduction and tutorial into Protein language models (PLMs). PLMs are large language models pre-trained on vast amounts of protein sequences, usually in a unsupervised fashion where no labels are given to the sequences. 
+The model is tasked to discover and learn the semantics of the protein sequences, effectively understanding the language of proteins (i.e. amino acids). 
 
 This tutorial will be covering the ESM2 PLM 650 million parameter model developed by Facebook AI Research. This tutorial shows how to extract the embeddings, a feature rich vector that describes the protein. There are lots of other PLMs available such as ProtBert.
-I will be embedding the same Gyrase A (Accession: P9WG47) as an example in previous posts.
+I will be embedding the same Gyrase A (Accession: P9WG47) in previous posts as an example.
 
 ## Prerequisite 
 
@@ -54,7 +55,7 @@ I will be embedding the same Gyrase A (Accession: P9WG47) as an example in previ
 
 2. Define a function that replaces `B, Z, J, U,` and `O` amino acids from your sequence into the unknown amino acid `X`.
 
-    This is because ESM ( and to a wider extent, other PLMS) works with the 20 common amino acids, uncommon amino acids may cause problems.
+    This is because ESM (and to a wider extent, other PLMS) works with the 20 common amino acids, uncommon amino acids may cause problems.
 
     ```python
     def formatseq(seq):
@@ -107,6 +108,7 @@ I will be embedding the same Gyrase A (Accession: P9WG47) as an example in previ
     This will yield a np array of size *num_of_sequence* * *length_of_protein* * *1280*
 
     *Note: ESM2 and its other sister models have the same input sequence limit of 1024 amino acids.*
+    
     *Note2: Failure to comply to this 1024 aa limit **may** [poison your GPU](https://github.com/facebookresearch/esm/discussions/76). You have been warned*
 
 8. Optional: Get the per protein embeddings
