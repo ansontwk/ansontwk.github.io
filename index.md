@@ -28,3 +28,5 @@ My work is usually on a Linux Ubuntu workstation and I manage my environments us
 * [Protein Language Models](./posts/plm.md)
 
 ## Other stuff
+
+* [Perl Locale warning](./others/perl.md)
