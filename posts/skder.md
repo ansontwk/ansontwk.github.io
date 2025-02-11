@@ -18,3 +18,23 @@ I will be using the dataset retrieved from [this example](../basics/ncbi_dataset
 conda create -n skder -c conda-forge -c bioconda skder
 ```
 
+## Usage
+
+1. Assuming your genomic assemblies/genomes are in a directory called `fna`, run
+
+```sh
+skder -g ./fna -o ./skder -l --threads 20
+```
+
+`-g` sets the input directory, `-o` sets the output directory. `-l` is optional that sets symbolic links in the output genomes instead of a direct copy. `--threads` sets number of threads to run skder. Bigger number good.
+
+2. Give it some time
+
+3. Your dereplicated genomes will be populated in the `Dereplicated_Representative_Genomes` subdirectory in the output path.
+
+In the example, we started with 1603 genomes. After dereplication, we ended with 15 genomes. This corresponds to about 0.9% is representative, suggesting that the 1603 genomes may be very similar to each other.
+
+
+*Note: You should probably shard and batch your genomes if you have more than 5000 genomes. The run time will increase signficantly as sample size increase since it's running pairwise comparisons.*
+
+[back](../)
