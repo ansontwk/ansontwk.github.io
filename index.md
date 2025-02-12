@@ -24,6 +24,7 @@ My work is usually on a Linux Ubuntu workstation and I manage my environments us
 * [Multiple Sequence Alignment Plotting](./basics/plot_msa.md)
 * [Retrieving Genomes from NCBI](./basics/ncbi_datasets.md)
 * [Dereplicating Genomes](./posts/skder.md)
+* [PyMOL Basics](./basics/pymol.md)
 
 ## Yer a wizard
 
