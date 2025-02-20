@@ -25,6 +25,7 @@ Apart from manually drawing it by hand, you could programmatically and dynamical
 ## Usage
 
 1. Load the packages 
+
     ```R
     library(drawProteins)
     library(ggplot2) #optional
@@ -40,16 +41,19 @@ Apart from manually drawing it by hand, you could programmatically and dynamical
     ```
 
     alternatively, load it in one go with
+
     ```R
     df_dat <- feature_to_dataframe(getfeatures("Q7B8V4"))
     ```
 
 3. Intialise the ggplot canvas
+
     ```R
     p <- draw_canvas(df_dat)
     ```
 
 4. Plot the chains and domains
+
     ```R
     p <- draw_chains(x, df_dat)
     p <- draw_domains(x, df_dat)
@@ -72,12 +76,14 @@ Apart from manually drawing it by hand, you could programmatically and dynamical
 
     *Note: the documentation is lacking, and doesn't cover other aspects of modfiying the plot*
 
-    Remove the description on the domains by adding ` label_domains = FALSE` to  draw_domains
+    Remove the description on the domains by adding `label_domains = FALSE` to  draw_domains
+
     ```R
     p <- draw_domains(x, df_dat, label_domains = FALSE)
     ```
 
     Change the legend title and key size
+
     ```R
     p <- p + guides(fill=guide_legend(title="Features", keywidth = unit(2, 'cm')))
     ```
@@ -85,6 +91,7 @@ Apart from manually drawing it by hand, you could programmatically and dynamical
     ![plot 5b](../images/plot_protein/5b.png)
 
     Set a colour palaette for your domains, using the okabe colour blind friendly set as example
+
     ```R
     okabe <- c("#D55E00", "#CC79A7", "#E69F00", "#009E73", "#0072B2")
 
@@ -133,6 +140,7 @@ Apart from manually drawing it by hand, you could programmatically and dynamical
     this represents a protein of size 1000, with two domains at 10-20 aa and 40-50 aa. I have placed taxid as 1 as placeholder
 
     Assuming your data is in a file called `dummy_data.txt` in the same current working directory.
+    
     ```R
     library(data.table)
     df_dat <- data.frame(fread("./dummy_data.txt"), row.names = 1)

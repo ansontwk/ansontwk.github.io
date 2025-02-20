@@ -23,14 +23,17 @@ I will be embedding the same Gyrase A (Accession: P9WG47) in previous posts as a
 
 * Get ESM2 [here](https://huggingface.co/facebook/esm2_t33_650M_UR50D)
 * SeqIO
+
     ```sh
     pip install Bio
     ```
+
 * Numpy ( *numpy should be installed during your tensorflow/pytorch installation* )
 
     ```sh
     pip install numpy
     ```
+
 * transformers
 
     ```sh
@@ -133,6 +136,7 @@ I will be embedding the same Gyrase A (Accession: P9WG47) in previous posts as a
     Will yield a result of `(1, 840, 1280)` and `(1, 1280)` respectively.
 
     Running
+    
     ```python
     print(per_protein_embeddings[0])
     print(per_residue_embeddings[0])
