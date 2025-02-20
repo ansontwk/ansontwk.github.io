@@ -93,7 +93,7 @@ Apart from manually drawing it by hand, you could programmatically and dynamical
 
     ![plot 5c](../images/plot_protein/5c.png)
     
-    Note that the accession id on the left side is not `Times new roman`. This is because the draw_chains calls ggplot to annotate the file beforehand, it escapes the `theme_bw(base_family=font)` override command. We want define a new function, say `draw_chains_times` as
+    Note that the accession id on the left side is not `Times new roman`. This is because the `draw_chains` calls `ggplot` to annotate the file beforehand, it escapes the `theme_bw(base_family=font)` override command. We want define a new function, say `draw_chains_times` as
 
     ```R
     draw_chains_times <- function (p, data = data, outline = "black", fill = "grey", label_chains = TRUE, 
@@ -106,12 +106,14 @@ Apart from manually drawing it by hand, you could programmatically and dynamical
                                   0.2, ymax = order + 0.2), colour = outline, fill = fill, 
     size = size)
     if (label_chains == TRUE) {
-        p <- p + annotate("text", x = -10, y = data[data$type == 
-                                                                 "CHAIN", ]$order, 
+        p <- p + annotate("text", x = -10, y = data[data$type == "CHAIN", ]$order, 
                                    label = labels, 
                                    hjust = 1, 
                                    size = label_size, 
                                    family = "Times")
+    } 
+    return(p)
+    }
     ```
 
     *Note: if you have already imported `ggplot2`, do not add `ggplot2::` in front of `geom_rect` and `annotate` in the custom function*
@@ -162,3 +164,5 @@ Apart from manually drawing it by hand, you could programmatically and dynamical
 # Reference
 
 1. https://f1000research.com/articles/7-1105/v1
+
+[back](../)
