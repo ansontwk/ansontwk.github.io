@@ -4,7 +4,7 @@ layout: default
 
 My research focus in microbial genomics, bioinformatics and novel deep learning methods. Most of what you will see here will revolve around these topics.
 
-I mainly code in Python through Visual studio code. 
+I mainly code in Python through Visual studio code, and R through R studio. 
 For machine learning tasks, I tend to gravitate towards tensorflow. 
 My work is usually on a Linux Ubuntu workstation and I manage my environments using conda.
 
@@ -21,10 +21,13 @@ My work is usually on a Linux Ubuntu workstation and I manage my environments us
 * [Tensorflow Basics](./basics/tf_basics.md)
 * [Genome Plotting](./basics/plot_genome.md)
 * [Multiple Sequence Alignment](./basics/msa.md)
-* [Multiple Sequence Alignment Plotting](./basics/plot_msa.md)
 * [Retrieving Genomes from NCBI](./basics/ncbi_datasets.md)
-* [Dereplicating Genomes](./posts/skder.md)
 * [PyMOL Basics](./basics/pymol.md)
+
+## Look ma no hands
+* [Dereplicating Genomes](./posts/skder.md)
+* [Multiple Sequence Alignment Plotting](./basics/plot_msa.md)
+
 
 ## Yer a wizard
 
