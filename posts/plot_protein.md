@@ -149,9 +149,9 @@ Apart from manually drawing it by hand, you could programmatically and dynamical
     | 1 | CHAIN | dummy | 1 | 1000 | 1000 | test_dummy | test_data | 1 | 1
     | 2 | DOMAIN | dummy domain 1 | 10 | 20 | 10 | dummy domain | dummy domain | 1 | 1 |
     | 3 | DOMAIN | dummy domain 2 | 40 | 50 | 10 | dummy domain | dummy domain | 1 | 1 |
-    | 1 | CHAIN | dummy | 1 | 1000 | 1000 | test_dummy | test_data2 | 1 | 2
-    | 2 | DOMAIN | dummy domain 1 | 10 | 20 | 10 | dummy domain | dummy domain | 1 | 2 |
-    | 3 | DOMAIN | dummy domain 2 | 40 | 50 | 10 | dummy domain | dummy domain | 1 | 2 |
+    | 4 | CHAIN | dummy | 1 | 1000 | 1000 | test_dummy | test_data2 | 1 | 2
+    | 5 | DOMAIN | dummy domain 1 | 10 | 20 | 10 | dummy domain | dummy domain | 1 | 2 |
+    | 6 | DOMAIN | dummy domain 2 | 40 | 50 | 10 | dummy domain | dummy domain | 1 | 2 |
 
     By adding to the `order` row, you can plot multiple proteins.
 
