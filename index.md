@@ -27,7 +27,7 @@ My work is usually on a Linux Ubuntu workstation and I manage my environments us
 ## Look ma no hands
 * [Dereplicating Genomes](./posts/skder.md)
 * [Multiple Sequence Alignment Plotting](./basics/plot_msa.md)
-
+* [Plotting protein domains](./posts/plot_protein.md)
 
 ## Yer a wizard
 

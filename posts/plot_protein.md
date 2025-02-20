@@ -99,10 +99,10 @@ Apart from manually drawing it by hand, you could programmatically and dynamical
     draw_chains_times <- function (p, data = data, outline = "black", fill = "grey", label_chains = TRUE, 
                                labels = data[data$type == "CHAIN", ]$entryName, size = 0.5, 
                                label_size = 4) 
-{
+    {
     begin = end = NULL
     p <- p + geom_rect(data = data[data$type == "CHAIN", 
-    ], mapping = ggplot2::aes(xmin = begin, xmax = end, ymin = order - 
+    ], mapping = aes(xmin = begin, xmax = end, ymin = order - 
                                   0.2, ymax = order + 0.2), colour = outline, fill = fill, 
     size = size)
     if (label_chains == TRUE) {
@@ -113,7 +113,52 @@ Apart from manually drawing it by hand, you could programmatically and dynamical
                                    size = label_size, 
                                    family = "Times")
     ```
-    
+
+    *Note: if you have already imported `ggplot2`, do not add `ggplot2::` in front of `geom_rect` and `annotate` in the custom function*
+
+    Now intsead of calling `draw_chains`, call `draw_chains_times` or any other name you have defined in this custom function.
+
+6.  You can plot custom proteins in case Uniprot annotation is not up to your taste/not available.
+
+    This is done by injecting a dataframe in this format:
+
+    | rowname | type | description | begin | end | length | accession | entryName | taxid | order
+    | -------- | ------- | -------- | ------- | -------- | ------- | -------- | ------- | -------- | ------- |
+    | 1 | CHAIN | dummy | 1 | 1000 | 1000 | test_dummy | test_data | 1 | 1
+    | 2 | DOMAIN | dummy domain 1 | 10 | 20 | 10 | dummy domain | dummy domain | 1 | 1 |
+    | 3 | DOMAIN | dummy domain 2 | 40 | 50 | 10 | dummy domain | dummy domain | 1 | 1 |
+
+    this represents a protein of size 1000, with two domains at 10-20 aa and 40-50 aa. I have placed taxid as 1 as placeholder
+
+    Assuming your data is in a file called `dummy_data.txt` in the same current working directory.
+    ```R
+    library(data.table)
+    df_dat <- data.frame(fread("./dummy_data.txt"), row.names = 1)
+    ```
+
+    `row.names = 1` means the first column is the row names.
+
+    Now plot as you would in the previous example.
+
+    ![custom1a](../images/plot_protein/custom_1a.png)
+
+    This can be extended to plot multiple proteins.
+
+    | rowname | type | description | begin | end | length | accession | entryName | taxid | order
+    | -------- | ------- | -------- | ------- | -------- | ------- | -------- | ------- | -------- | ------- |
+    | 1 | CHAIN | dummy | 1 | 1000 | 1000 | test_dummy | test_data | 1 | 1
+    | 2 | DOMAIN | dummy domain 1 | 10 | 20 | 10 | dummy domain | dummy domain | 1 | 1 |
+    | 3 | DOMAIN | dummy domain 2 | 40 | 50 | 10 | dummy domain | dummy domain | 1 | 1 |
+    | 1 | CHAIN | dummy | 1 | 1000 | 1000 | test_dummy | test_data2 | 1 | 2
+    | 2 | DOMAIN | dummy domain 1 | 10 | 20 | 10 | dummy domain | dummy domain | 1 | 2 |
+    | 3 | DOMAIN | dummy domain 2 | 40 | 50 | 10 | dummy domain | dummy domain | 1 | 2 |
+
+    By adding to the `order` row, you can plot multiple proteins.
+
+    *Note: plots are made from bottom up. Keep that in mind.*
+
+    ![custom1b](../images/plot_protein/custom_1b.png)
+
 # Reference
 
 1. https://f1000research.com/articles/7-1105/v1
