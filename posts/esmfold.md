@@ -53,18 +53,17 @@ pip install --upgrade transformers py3Dmol accelerate
 
     ```python
     def loadfasta(file):
-    #loads fasta file for prediction
-    test_sequences = []
-    test_headers = []
-    
-    with open(file, "r") as readfile:
-        for record in SeqIO.parse(readfile, "fasta"):
-            seq = str(record.seq)
-            if len(seq) > 1024: #ESMFold has a sequnece limit of 1024.
-                seq = seq[:1024]
-            test_sequences.append(seq)
-            test_headers.append(record.id)
-    return test_sequences, test_headers
+        test_sequences = []
+        test_headers = []
+        
+            with open(file, "r") as readfile:
+                for record in SeqIO.parse(readfile, "fasta"):
+                    seq = str(record.seq)
+                    if len(seq) > 1024: #ESMFold has a sequnece limit of 1024.
+                        seq = seq[:1024]
+                    test_sequences.append(seq)
+                    test_headers.append(record.id)
+            return test_sequences, test_headers
     ```
 
     Then load in your sequences, assuming your single sequence is called `"./data.fa"`
