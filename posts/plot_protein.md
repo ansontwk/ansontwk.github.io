@@ -22,6 +22,15 @@ Apart from manually drawing it by hand, you could programmatically and dynamical
 
 *testing on older versions worked without issues, but is not guaranteed*
 
+## Installation
+
+```R
+if (!require("BiocManager", quietly = TRUE))
+    install.packages("BiocManager")
+
+BiocManager::install("drawProteins")
+```
+
 ## Usage
 
 1. Load the packages 

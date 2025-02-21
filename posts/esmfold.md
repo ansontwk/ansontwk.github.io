@@ -17,7 +17,9 @@ ESMFold is a model that uses ESM-2 PLM emebddings as backbone to predict protein
 
 ## Installation
 
+```sh
 pip install --upgrade transformers py3Dmol accelerate
+```
 
 ## Usage
 
