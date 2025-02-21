@@ -32,6 +32,7 @@ My work is usually on a Linux Ubuntu workstation and I manage my environments us
 ## Yer a wizard
 
 * [Protein Language Models](./posts/plm.md)
+* [Protein structure prediction using ESMFold](./posts/esmfold.md)
 
 ## Other stuff
 
