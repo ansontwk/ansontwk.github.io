@@ -23,6 +23,7 @@ My work is usually on a Linux Ubuntu workstation and I manage my environments us
 * [Multiple Sequence Alignment](./basics/msa.md)
 * [Retrieving Genomes from NCBI](./basics/ncbi_datasets.md)
 * [PyMOL Basics](./basics/pymol.md)
+* [Plotting Pairwise matrices](./posts/pairwise_matrix.md)
 
 ## Look ma no hands
 * [Dereplicating Genomes](./posts/skder.md)
