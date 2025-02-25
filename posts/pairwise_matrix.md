@@ -2,7 +2,7 @@
 layout: default
 ---
 
-# PLotting Pairwise matrices
+# Plotting Pairwise matrices
 
 When comparing classes in a biological setting, pairwise matrices are a great way to visualise the relationship between these classes. I will be using simulated data to represent a hypothetical pairwise similarity between 4 groups. 
 
