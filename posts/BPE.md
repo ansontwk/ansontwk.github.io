@@ -20,7 +20,7 @@ Byte pair encoding(BPE) is an algorithm originally desgined for word compression
 
     ```python
     import random
-    SEED = 179180
+    SEED = 42
     random.seed(SEED)
     ```
 
