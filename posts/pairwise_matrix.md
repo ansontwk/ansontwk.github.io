@@ -17,7 +17,7 @@ I will be showing you how to plot a heatmap of pairwise matrix and using the `ma
 
 ## Installation
 
-None.
+* None
 
 ## Usage
 
