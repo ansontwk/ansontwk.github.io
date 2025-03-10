@@ -2,9 +2,9 @@
 layout: default
 ---
 
-# Byte Pair Encoding of protein sequence
+# Byte Pair Encoding of Protein Amino Acids Sequence
 
-Byte pair encoding(BPE) is an algorithm originally desgined for word compression. This is an example of adopting BPE for tokenziation of protein amino acids sequences to feed it into LLMs. This example will use 2500 completely random sequence of uniform size 50 aa. In practice, the sequence length will be vastly different.
+Byte pair encoding(BPE) is an algorithm originally desgined for word compression. This is an example of adopting BPE for tokenziation of protein amino acids sequences to feed it into LLMs, adapted from [Asgari et al](https://www.nature.com/articles/s41598-019-38746-w). This example will use 2500 completely random sequence of uniform size 50 aa. In practice, the sequence length will be vastly different.
 
 ## Prerequisite
 
@@ -132,7 +132,10 @@ Byte pair encoding(BPE) is an algorithm originally desgined for word compression
     ```
 
     The original sequence is 50 aa. The sequence compressed with BPE is 28 tokens long. The compression factor is about 1.8.
-    
-[back](../)
 
+# Reference
+
+1. https://www.nature.com/articles/s41598-019-38746-w
+
+[back](../)
 

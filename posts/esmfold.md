@@ -13,7 +13,13 @@ ESMFold is a model that uses ESM-2 PLM emebddings as backbone to predict protein
 * A cuda-compative nvidia GPU with at least 16GB V-RAM (Video memory)
 * pytorch
 
-*Note: at least 16GB is recommended, at least a RTX 4080 would be needed*
+*Note: at least 16GB is recommended*
+
+The following consumer-grade cards would suffice:
+* RTX 3090/3090Ti ampere
+* RTX 4080/4080Super/4080Ti
+* RTX 4090
+* RTX 5070Ti
 
 ## Installation
 
@@ -146,7 +152,7 @@ pip install --upgrade transformers py3Dmol accelerate
     main()
     ```
 
-    The try catch is to prevent any issues from completely bricking your run. It also checks for any already predicted sequences in multiple runs to save resources.
+    The try-catch is to prevent any issues from completely bricking your run. It also checks for any already predicted sequences in multiple runs to save resources.
 
 
 # Reference
