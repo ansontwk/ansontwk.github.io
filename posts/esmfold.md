@@ -10,7 +10,7 @@ ESMFold is a model that uses ESM-2 PLM emebddings as backbone to predict protein
 
 ## Prerequisite
 
-* A cuda-compative nvidia GPU with at least 16GB V-RAM (Video memory)
+* A cuda-compatible nvidia GPU with at least 16GB V-RAM (Video memory)
 * pytorch
 
 *Note: at least 16GB is recommended*
