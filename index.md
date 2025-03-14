@@ -12,10 +12,6 @@ My work is usually on a Linux Ubuntu workstation and I manage my environments us
 
 # Topics
 
-## For flavour (Now with 100% more colours!)
-
-[Oh my zsh](./others/ohmyzsh.md)
-
 ## Baby's first steps
 
 * [Tensorflow Basics](./basics/tf_basics.md)
@@ -38,4 +34,6 @@ My work is usually on a Linux Ubuntu workstation and I manage my environments us
 
 ## Other stuff
 
+* [oh my zsh (Now with 100% more colours!)](./others/ohmyzsh.md)
+* [word2vec word semantics](./others/word2vec.md)
 * [Perl Locale warning](./others/perl.md)
