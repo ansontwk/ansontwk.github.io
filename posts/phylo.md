@@ -94,6 +94,7 @@ BiocManager::install("treeio")
     | MN908947.3 | SARS-CoV2 | Betacoronavirus | Sarbecovirus |
     | AY278491.2 | SARS-CoV | Betacoronavirus | Sarbecovirus |
 
+    *Note: Ensure one of the columns, in this case `ID` matches the names of the tree tips*
 
     Import this csv to R.
 
@@ -113,7 +114,7 @@ BiocManager::install("treeio")
           values=c("#4DBBD5FF", "#DC0000FF", "#00A087FF"))
     ```
 
-    *Note: adjust the `offset` and `pwidth` and colours as defined in `scale_fill_manual` according personal taste*
+    *Note: adjust the `offset`, `pwidth` and colours as defined in `scale_fill_manual` according personal taste*
 
 8. Plot and save
 
