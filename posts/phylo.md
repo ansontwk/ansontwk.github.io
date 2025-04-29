@@ -28,6 +28,8 @@ BiocManager::install("ggtreeExtra")
 BiocManager::install("treeio")
 ```
 
+## Usage
+
 1. Import packages
 
     ```R
