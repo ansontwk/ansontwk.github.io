@@ -54,3 +54,4 @@ conda install -c bioconda mafft iqtree
 
     The directory of `treedir` will contain a multitude of files starting with the name as specified in the `--prefix` flag. Among those files, you will need the `prefix.contree` file, represeting a phylogenetic tree in newick format.
 
+[back](../)

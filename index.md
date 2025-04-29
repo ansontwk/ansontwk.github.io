@@ -25,6 +25,8 @@ My work is usually on a Linux Ubuntu workstation and I manage my environments us
 * [Dereplicating Genomes](./posts/skder.md)
 * [Multiple Sequence Alignment Plotting](./basics/plot_msa.md)
 * [Plotting protein domains](./posts/plot_protein.md)
+* [Building a Phylogenetic tree](./posts/tree.md)
+* [Visulisation of Phylogenetic tree using R](./posts/phylo.md)
 
 ## Yer a wizard
 
