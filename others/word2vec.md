@@ -4,7 +4,7 @@ layout: default
 
 # Natural language processing: Word2Vec
 
-In natural language processing, individual words can be embedding into vectors based on a pretrained model. One such pretraining algorithm is word2vec proposed by [Mikolov et al.](https://arxiv.org/abs/1301.3781) from Google in 2013. Although a bit outdated and outperformed by more sophisticated models, word2vec vectors has some interesting properties that reveal about our written/spoken language.
+In natural language processing, individual words can be embedded into vectors based on a pretrained model. Thesse embeddings are vectors representing the word in a high-dimensional space, and often are feature-rich, providing us with semantic meaning. One such pretraining algorithm is word2vec proposed by [Mikolov et al.](https://arxiv.org/abs/1301.3781) from Google in 2013. Although a bit outdated and outperformed by more sophisticated models, word2vec vectors has some interesting properties that reveal about our written/spoken language.
 
 ## Prerequisite 
 
