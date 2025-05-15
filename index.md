@@ -33,6 +33,7 @@ My work is usually on a Linux Ubuntu workstation and I manage my environments us
 * [Protein Language Models](./posts/plm.md)
 * [Protein structure prediction using ESMFold](./posts/esmfold.md)
 * [Byte Pair Encoding](./posts/BPE.md)
+* [Chaos Game Rrepresentation of Nucleic Acids](./posts/cgr.md)
 
 ## Other stuff
 
