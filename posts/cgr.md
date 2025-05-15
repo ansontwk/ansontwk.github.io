@@ -50,7 +50,7 @@ install.packages('kaos')
         outvector <- unlist(strsplit(seq, split = "")
         return(outvector)
     }
-
+    ```
     This will convert a sequence, for example "ATGC" into a vector of `c("A", "T", "G", "C")`
 
 3. Run the chaos game representation conversion
