@@ -35,6 +35,10 @@ My work is usually on a Linux Ubuntu workstation and I manage my environments us
 * [Byte Pair Encoding](./posts/BPE.md)
 * [Chaos Game Representation of Nucleic Acids](./posts/cgr.md)
 
+## Julia for Bioinformatics
+
+* [Learning Julia for Bioinformatics](./julia/julia_home.md)
+
 ## Other stuff
 
 * [oh my zsh (Now with 100% more colours!)](./others/ohmyzsh.md)
