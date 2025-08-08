@@ -136,7 +136,7 @@ println(😂, " ", 💩)
 
 yields `hello world`
 
-## retrieving variable type
+## Retrieving variable type
 
 Get the type of a variable with `typeof()`
 

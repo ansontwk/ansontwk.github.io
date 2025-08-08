@@ -14,7 +14,6 @@ My work is usually on a Linux Ubuntu workstation and I manage my environments us
 
 ## Baby's first steps
 
-* [Tensorflow Basics](./basics/tf_basics.md)
 * [Genome Plotting](./basics/plot_genome.md)
 * [Multiple Sequence Alignment](./basics/msa.md)
 * [Retrieving Genomes from NCBI](./basics/ncbi_datasets.md)
@@ -22,6 +21,7 @@ My work is usually on a Linux Ubuntu workstation and I manage my environments us
 * [Plotting Pairwise matrices](./posts/pairwise_matrix.md)
 
 ## Look ma no hands
+* [Tensorflow Basics](./basics/tf_basics.md)
 * [Dereplicating Genomes](./posts/skder.md)
 * [Multiple Sequence Alignment Plotting](./basics/plot_msa.md)
 * [Plotting protein domains](./posts/plot_protein.md)
@@ -39,7 +39,12 @@ My work is usually on a Linux Ubuntu workstation and I manage my environments us
 
 * [Learning Julia for Bioinformatics](./julia/julia_home.md)
 
+## On programmatic medical statistics
+
+* [On survival analysis and KM plots](./posts/km.md)
+
 ## Other stuff
+These are stuff that are bioinformatics adjacent, yet not necessarily directly related. They include personal presonal preferences, debugging and editing findings, and other stuff I am interested in.
 
 * [oh my zsh (Now with 100% more colours!)](./others/ohmyzsh.md)
 * [word2vec word semantics](./others/word2vec.md)
