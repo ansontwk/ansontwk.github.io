@@ -32,7 +32,8 @@ Byte pair encoding (BPE) is an algorithm originally desgined for word compressio
     'H': 6, 'I': 7, 'K': 8, 'L': 9, 'M': 10, 'N': 11,
     'P': 12, 'Q': 13, 'R': 14, 'S': 15, 'T': 16, 'V': 17,
     'W': 18, 'Y': 19, 'X': 20} 
-
+    MAX_VOCABSIZE = 1024
+    AMINOLIST = ['A', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'K', 'L', 'M', 'N', 'P', 'Q', 'R', 'S', 'T', 'V', 'W', 'Y', 'X']
     ```
 
 3. Define housekeeping function to generate a random corpus of sequence and generate random sequences. For this example, a corpus of 2500 random sequence is used to generate the vocabulary.
