@@ -34,6 +34,7 @@ My work is usually on a Linux Ubuntu workstation and I manage my environments us
 * [Protein structure prediction using ESMFold](./posts/esmfold.md)
 * [Byte Pair Encoding](./posts/BPE.md)
 * [Chaos Game Representation of Nucleic Acids](./posts/cgr.md)
+* [Sparse Matrix Compression in Python](./posts/csr.md)
 
 ## Julia for Bioinformatics
 
