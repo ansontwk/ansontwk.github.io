@@ -51,6 +51,7 @@ install.packages("ggsignif")
     geom_jitter() +
     theme_bw()
     ```
+
     ![PLT1](../images/statannot/plt1.png)
 
 3. Now we can layer a geom_signif object to the `plt` object
@@ -59,6 +60,7 @@ install.packages("ggsignif")
     plt2 <- plt + geom_signif(comparisons = list(c("A", "B")),
                           map_signif_level = TRUE)
     ```
+
     ![PLT2](../images/statannot/plt2.png)
 
     The `comparisons` parameter is a list of vectors that specify the groups that you want to compare. In this case, groups `A` and `B` are compared. 
@@ -72,6 +74,7 @@ install.packages("ggsignif")
                               map_signif_level = TRUE,
                               step_increase = 0.1)
     ```
+
     ![PLT3](../images/statannot/plt3.png)
 
     In this case we add `step_increase` parameter to preven the bars from overlapping. This example we only compare `A` and `B`, and `A` and `C`.
@@ -104,6 +107,7 @@ install.packages("ggsignif")
     ```R
     add_pval(plt, pairs = list(c(1,2), c(1,3), c(2,3)), heights = c(20,25,30), pval_text_adj = 2, pval_star = TRUE)
     ```
+
     ![PLT5](../images/statannot/plt5.png)
 
     We need to use the `heights` parameter to control where the pval are placed. The `pairs` parameter works similarly to the `comparisons` parameter, but loads the index instead of calling the name of the group.
@@ -113,6 +117,7 @@ install.packages("ggsignif")
     ```R
     add_pval(plt, pairs = list(c(1,2), c(1,3), c(2,3)), heights = c(20,25,30), annotation = c("A+B", "A+C", "B+C"), pval_text_adj = 2)
     ```
+    
     ![PLT6](../images/statannot/plt6.png)
 
 
