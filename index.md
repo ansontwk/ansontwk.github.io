@@ -43,7 +43,8 @@ My work is usually on a Linux Ubuntu workstation and I manage my environments us
 ## On programmatic medical statistics
 
 * [On survival analysis and KM plots](./posts/km.md)
-* [Adding statistical annotations to plots](./posts/statistic_annotations.md)
+* [Adding statistical annotations to plots in python](./posts/statistic_annotations.md)
+* [Adding statistical annotations to plots in R](./posts/statistic_annotations_R.md)
 
 ## Other stuff
 These are stuff that are bioinformatics adjacent, yet not necessarily directly related. They include personal presonal preferences, debugging and editing findings, and other stuff I am interested in.
